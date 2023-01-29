@@ -1,0 +1,6 @@
+(executable
+ (public_name lwt_example)
+ (name main)
+ (libraries lwt_example core cohttp-lwt-unix yojson)
+ (preprocess
+  (pps lwt_ppx ppx_deriving.std ppx_deriving_yojson)))
